@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif (isset($_POST['logout'])) {
         // Logout user
         session_destroy();
-        header('Location: index.php');
+        header('Location: index.html');
         exit;
     } elseif (isset($_POST['reply'])) {
         $postId = $_POST['post_id'];
